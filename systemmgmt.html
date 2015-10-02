@@ -1,0 +1,12 @@
+<p>
+${_("Because Splunk can index and search multiple data sources and combine them into a single view - or even a single search - it's easy to track down unauthorized changes, unapplied patches or unusual activity.")}
+</p>
+
+	<ul style="padding: 0 7px 0 20px;">
+		<li>${_("For example, by indexing the <strong><a href=\"%(url)s\">Windows Update log</a></strong>, Splunk can tell you what updates have been applied, what has failed, and when. It's also a great jumping off point for investigating not only that a failure happened, but why.") % dict(url=make_url('/manager/windows/data/inputs/monitor'))}</li>
+		<li>${_('Or, by indexing the <strong><a href="%(url)s">Windows Event logs</a></strong>, Splunk can tell you about unusual activity on your system(s) and alert you to hardware and software failures.') % dict(url=make_url('/manager/windows/admin/win-event-log-collections'))} </li>
+	</ul>
+
+<p>
+${_('Note that depending on your <strong><a href="%(auditurl)s">audit level</a></strong> you may not capture failed or even successful logons. Learn more about <strong><a href="%(auditurl)s"> auditing </a></strong> and how to enable auditing of <strong><a href="%(splunkurl)s"</a> any Windows device</a></strong>.') % dict(auditurl="http://technet.microsoft.com/en-us/library/cc766468(WS.10).aspx", splunkurl="http://www.splunk.com/base/Deploy:AuditFilereadsWindows")}
+</p>
